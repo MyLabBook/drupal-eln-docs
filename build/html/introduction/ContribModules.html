@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Contrib Modules &mdash; Drupal Based ELN 1.0 Beta 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Other Modules and Distributions" href="OtherModules.html" />
+    <link rel="prev" title="Custom Content Types" href="CustomTypes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Drupal Based ELN
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0 Beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Introduction to Drupal ELNs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="CustomTypes.html">Custom Content Types</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Contrib Modules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#double-field">Double field</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geolocation">Geolocation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#address">Address</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tablefield">Tablefield</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-embed">Video Embed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#standard-field-types">Standard Field Types</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="OtherModules.html">Other Modules and Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../experiment/index.html">Experiments in a Drupal ELN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../protocol/index.html">Protocol Steps in a Drupal ELN</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Drupal Based ELN</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Introduction to Drupal ELNs</a> &raquo;</li>
+        
+      <li>Contrib Modules</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/introduction/ContribModules.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="contrib-modules">
+<h1>Contrib Modules<a class="headerlink" href="#contrib-modules" title="Permalink to this headline">¶</a></h1>
+<p>The thousands of modules that are available on the drupal.org website are usually referred to in the Drupal
+community as <code class="docutils literal notranslate"><span class="pre">contrib</span> <span class="pre">modules</span></code>, which is short for <code class="docutils literal notranslate"><span class="pre">contributed</span> <span class="pre">modules</span></code>. The contrib modules
+that are used in this version of MyLabBook are described below.</p>
+<div class="section" id="double-field">
+<h2>Double field<a class="headerlink" href="#double-field" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://www.drupal.org/project/double_field">double field module</a> has great possibilities for use in
+an ELN. It provides the ability to match up two different field types and basically treat them as one field type.
+The following sub-field types can be used in these match-ups.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Boolean</p></li>
+<li><p>Text</p></li>
+<li><p>Text (long)</p></li>
+<li><p>Integer</p></li>
+<li><p>Float</p></li>
+<li><p>Decimal</p></li>
+<li><p>Email</p></li>
+<li><p>Telephone</p></li>
+<li><p>Date</p></li>
+<li><p>Url</p></li>
+</ul>
+</div></blockquote>
+<p>At a very basic level a label (text field) can be coupled with any of these other fields to collect data of
+one of the types shown above. With Drupal it is also easy to designate whether these double fields are a list of
+double fields or just one double field.</p>
+<p>In this version of MyLabBook, we use this module fairly extensively.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Boolean Double Field with HTML enabled text for a Task List</p></li>
+<li><p>Decimal Double Field with a text label a table of decimal values</p></li>
+<li><p>Integer Double Field with a text label a table of integer values</p></li>
+<li><p>Float Double Field with a text label a table of floating point values</p></li>
+<li><p>Text Double Field with a text label a table of text values</p></li>
+<li><p>Date Double Field with a text label a table of date values</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="geolocation">
+<h2>Geolocation<a class="headerlink" href="#geolocation" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://www.drupal.org/project/geolocation">geolocation module</a> can also be added to any protocol step to
+add fields for geolocation. The most obvious use case for this is when you may be collecting data where the location
+of the data point is important. For example, when collecting environmental samples of some type this may be critical.
+This module already has capabilities for mapping built in as well. This seems to be a unique ability of MyLabBook as
+compared with most other open source ELNs.</p>
+</div>
+<div class="section" id="address">
+<h2>Address<a class="headerlink" href="#address" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://www.drupal.org/project/address">address module</a> can be used in conjunction with the Geolocation
+module for easy lookup of latitude and longitude values.</p>
+</div>
+<div class="section" id="tablefield">
+<h2>Tablefield<a class="headerlink" href="#tablefield" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://www.drupal.org/project/tablefield">tablefield module</a> is another very useful field for an ELN.
+It provides a simple table structure with the ability to designate the number of rows and columns in the table.
+As with most field types, when the tablefield is added to the Protocol Step custom content type, then the count of
+the fields can be designated. So, you can add one table, two tables or unlimited tables to a given step according
+to what is most appropriate.</p>
+</div>
+<div class="section" id="video-embed">
+<h2>Video Embed<a class="headerlink" href="#video-embed" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://www.drupal.org/project/video_embed_field">video embed field module</a> can be used
+to embed YouTube or Vimeo videos. In the MyLabBook demo, only the ability for YouTube embeds is enabled
+by default.</p>
+</div>
+<div class="section" id="standard-field-types">
+<h2>Standard Field Types<a class="headerlink" href="#standard-field-types" title="Permalink to this headline">¶</a></h2>
+<p>In addition, we use the following field types that are included in every standard Drupal installation.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Entity Reference</p></li>
+<li><p>File Uploads</p></li>
+<li><p>Image Uploads</p></li>
+<li><p>Text (Formatted Long)</p></li>
+<li><p>Text</p></li>
+<li><p>URI / Web Links</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="OtherModules.html" class="btn btn-neutral float-right" title="Other Modules and Distributions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="CustomTypes.html" class="btn btn-neutral float-left" title="Custom Content Types" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Creative Commons Zero v1.0 Universal License
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

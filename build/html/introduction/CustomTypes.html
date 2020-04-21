@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Custom Content Types &mdash; Drupal Based ELN 1.0 Beta 1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contrib Modules" href="ContribModules.html" />
+    <link rel="prev" title="Introduction to Drupal ELNs" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Drupal Based ELN
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0 Beta
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Introduction to Drupal ELNs</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Custom Content Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#brief-background-for-custom-content-types">Brief Background for Custom Content Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-content-types-in-mylabbook">Custom Content Types in MyLabBook</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#custom-content-type-of-an-experiment">Custom Content Type of an Experiment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#custom-content-type-of-a-protocol-step">Custom Content Type of a Protocol Step</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tabs-for-protocol-step-field-sets">Tabs for Protocol Step Field Sets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ContribModules.html">Contrib Modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="OtherModules.html">Other Modules and Distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../experiment/index.html">Experiments in a Drupal ELN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../protocol/index.html">Protocol Steps in a Drupal ELN</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Drupal Based ELN</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Introduction to Drupal ELNs</a> &raquo;</li>
+        
+      <li>Custom Content Types</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/introduction/CustomTypes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="custom-content-types">
+<h1>Custom Content Types<a class="headerlink" href="#custom-content-types" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="brief-background-for-custom-content-types">
+<h2>Brief Background for Custom Content Types<a class="headerlink" href="#brief-background-for-custom-content-types" title="Permalink to this headline">¶</a></h2>
+<p>From the very early versions of Drupal, the concept of a <code class="docutils literal notranslate"><span class="pre">node</span></code> was central to how content management was handled.
+Originally the node was used for various entities like articles and blog pages. Over time, the node was
+adapted for many other uses by the ability to attach many different field types to a node, like file attachments or
+datetime fields. In Drupal 8, this concept of adding different fields (or being <code class="docutils literal notranslate"><span class="pre">fieldable</span></code>) was extended to
+many more entities like taxonomies, users and blocks as well.</p>
+<p>In many ways, however, the node is still the most flexible of content types in Drupal. It is usually the easiest
+to work with because it has the most mature set of integrations with the underlying CMS. Currently we find extending
+the node with appropriate fields is entirely adequate as well as the simplest approach in many cases, so this is the
+approach that we often take in this version of our demo Drupal ELN (<code class="docutils literal notranslate"><span class="pre">MyLabBook</span></code>).</p>
+</div>
+<div class="section" id="custom-content-types-in-mylabbook">
+<h2>Custom Content Types in MyLabBook<a class="headerlink" href="#custom-content-types-in-mylabbook" title="Permalink to this headline">¶</a></h2>
+<p>When we extend the basic node entity by attaching different fields, we are creating a new type of
+node, which is often referred to as a <code class="docutils literal notranslate"><span class="pre">Custom</span> <span class="pre">Content</span> <span class="pre">Type</span></code> (also referred to sometimes as a <code class="docutils literal notranslate"><span class="pre">Node</span> <span class="pre">Bundle</span></code>).
+For MyLabBook, at this point we have only two Custom Content Types, the Experiment and the Protocol Step.</p>
+<div class="section" id="custom-content-type-of-an-experiment">
+<h3>Custom Content Type of an Experiment<a class="headerlink" href="#custom-content-type-of-an-experiment" title="Permalink to this headline">¶</a></h3>
+<p>The Experiment custom content type stores the metadata for the experiment along with acting as a container for
+all of the protocol steps in the experiment.</p>
+</div>
+<div class="section" id="custom-content-type-of-a-protocol-step">
+<h3>Custom Content Type of a Protocol Step<a class="headerlink" href="#custom-content-type-of-a-protocol-step" title="Permalink to this headline">¶</a></h3>
+<p>The heart of MyLabBook is the Protocol Step custom content type. It is these protocol steps that make up the
+steps in an experiment. They could also have been called an Experimental Step, but in most cases during an
+experiment the researcher is following or developing some type of protocol. For that reason and to ease problems with
+namespace collision, the name of Protocol Step is used instead. This is also consistent with the nomenclature
+used by other ELNs.</p>
+<p>Each Protocol Step contains the fields that are needed for the given step of the experiment. There are a few
+different approaches that may come to mind for creating a basic Protocol Step custom content type.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Create one Protocol Step custom content type that has all of the fields that you will need for any step that
+you have in your experiment. Then use that Protocol Step for each step in your experiment, leaving fields blank
+if they are not needed.</p></li>
+<li><p>Create multiple different Protocol Step custom content types, one custom content type for each different type of
+step that you need. Then use the appropriate Protocol Step custom content type for a given step in your
+experiment.</p></li>
+<li><p>Use a hybrid approach between the first and second approach, so that you have a few Protocol Step custom
+content types and use the Protocol Step type that best fits your given experimental step, with a few of the
+different fields perhaps left blank in a given step.</p></li>
+</ul>
+</div></blockquote>
+<p>In this first version of MyLabBook, we have taken the first approach for simplicity, but good cases can be made for
+the second and third approaches as well.</p>
+</div>
+<div class="section" id="tabs-for-protocol-step-field-sets">
+<h3>Tabs for Protocol Step Field Sets<a class="headerlink" href="#tabs-for-protocol-step-field-sets" title="Permalink to this headline">¶</a></h3>
+<p>Since we take the first approach for the Protocol Step of including <em>all</em> of the possible fields, then we also
+want to hide unused fields from the interface as much as possible so that the interface does not become too confusing.
+In this version of MyLabBook we use tabs for each set of fields, and then there are checkboxes for hiding or
+displaying the tabs of interest for a given Protocol Step.</p>
+<p>The following tabs are available for a Protocol Step, with each tab displaying one or more fields for that tab.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Task List</p></li>
+<li><p>Rich Text Notes</p></li>
+<li><p>Tables or Grids for Data</p></li>
+<li><p>Geolocation Address and Coordnates (Lat &amp; Long)</p></li>
+<li><p>Image and File Uploads</p></li>
+<li><p>Web Site URLs and descriptors</p></li>
+<li><p>Sets of Labels with Decimal Values</p></li>
+<li><p>Sets of Labels with Integer Values</p></li>
+<li><p>Sets of Labels with Floating Point Values</p></li>
+<li><p>Sets of Labels with Text Values</p></li>
+<li><p>Sets of Labels with Date Values</p></li>
+<li><p>Uploaded Videos or Embedded YouTube Videos</p></li>
+</ul>
+</div></blockquote>
+<p>This combination of hiding unused tabs along with having many different types of field sets to choose from should
+allow researchers in most cases to customize a given Protocol Step to reflect their needs for an appropriate set of
+data to collect.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ContribModules.html" class="btn btn-neutral float-right" title="Contrib Modules" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Introduction to Drupal ELNs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright Creative Commons Zero v1.0 Universal License
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
